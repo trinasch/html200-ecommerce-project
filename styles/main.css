@@ -70,7 +70,7 @@ main {
   
 aside {
   width: 30%;
-  padding: 6rem 0 0 1rem;
+  padding: 5rem 0 0 1rem;
 }
 
 form input {
@@ -89,11 +89,11 @@ input[type="submit"] {
 /*********** PRODUCTS SECTION ***********/
 
 section {
-  padding: 0.75rem;
+  padding: 0.75rem 0.75rem 0;
 }
 
 h2 {
-  padding: 1.5rem;
+  padding: 1rem;
   font-size: 2rem;
   color: #2d2d2d;
   font-weight: bold;
@@ -114,7 +114,7 @@ h3 {
 }
 
 .item-container div {
-  width: 20rem;
+  width: 17rem;
   padding: 1rem;
   border: 1px solid #666666;
   margin: .5rem;
@@ -126,5 +126,4 @@ h3 {
 }
 
 /*********** MEDIA QUERIES ***********/
-
 
