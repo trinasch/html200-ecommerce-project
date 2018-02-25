@@ -1,32 +1,7 @@
-/***************** GRID *****************/
+/***************** ALL *****************/
 * {
     box-sizing: border-box;
 }
-
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
 
 /***************** TEXT *****************/
 body {
@@ -68,6 +43,8 @@ nav a:hover {
 .hero {
   flex: none;
   display: flex;
+  flex-wrap: nowrap;
+  max-height: 142px;
 }
 
 h1 .logo-w {
@@ -133,9 +110,53 @@ h3 {
 
 /*********** MEDIA QUERIES ***********/
 
-@media only screen and (max-width: 600px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
+/* for mobile */
+[class*="col-"] {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+
+/* for tablet */
+@media only screen and (min-width: 480px) {
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .col-1med {width: 33.33%;}
+  .col-2med {width: 66.66%;}
+  .col-3med {width: 100%;}
+
+/* for desktop - small */
+@media only screen and (min-width: 768px) {
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+/* for desktop - large */  
+@media only screen and (min-width: 1225px) {
+  .container {
+    width: 1225px;
+    margin: auto;
+  }
 }
