@@ -129,6 +129,7 @@ h3 {
   .col-1med {width: 33.33%;}
   .col-2med {width: 66.66%;}
   .col-3med {width: 100%;}
+}
 
 /* for desktop - small */
 @media only screen and (min-width: 768px) {
@@ -160,3 +161,4 @@ h3 {
     margin: auto;
   }
 }
+  
