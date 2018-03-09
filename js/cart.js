@@ -11,7 +11,7 @@ function addCart(choice){
   cart.push(choice);
   
   console.log(cart.length);  
-  console.log(cart);
+  console.log(cart)
 }
 
 //Remove item if found in cart, write 'not in cart' message if not
@@ -23,10 +23,11 @@ function removeCart(choice){
   if(i == -1){
     console.log(choice + " not in cart.")
   }else{
-    cart.pop(choice);
+    cart.splice(i, 1);
   }
   
   console.log(cart.length);  
-  console.log(cart);
+  console.log(cart)
 }
+
 
