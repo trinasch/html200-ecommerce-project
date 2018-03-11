@@ -64,9 +64,32 @@ Lesson 09:
   - User can add and remove items from their cart, which changes cart count number at top of page.
   - This README is updated to include information about the testing steps taken to ensure site quality.
   - Site is live on GH Pages hosting.
-
+  
 ## Grading
 Each weekly assignment will be graded independently. There will not be a final grade for the entire project.
 
+## Target audience
+  - Professional female, aged 20-45 years
+  - Expectations are set by medium-to-high level of familiarity with retail websites: 
+    - Table stakes: price, description, photo, price, customer reviews, in stock indicator, purchase online, credit card and paypal payment methods, free shipping
+  - Likely to purchase full price in fall / winter, seeks discount prices after holidays or during summer
+  - Shops online at home and on the go by phone or tablet, occasionally shops on desktop at work
+  - Primary shopping device is smart phone or tablet, most common browsers are Safari (iPhone) and Chrome (Android)
+  - Connection speed varies, high speed at work and home, lower connection speeds on the road
+
 ## Testing
-[update this section with information about the testing steps you took to ensure site quality]
+  1 Responsive test pass: https://search.google.com/test/mobile-friendly
+    - Result: Page is mobile friendly, All page resources loaded successfully
+    
+  2 Responsive emulator: http://re-view.emmet.io/ (chrome extension)
+    - iPhone, Android (320w) - Layout issue with sign up form on top of logo / company name
+    - Tablet (all sizes) - No layout issues
+    
+  3 Performance: https://developers.google.com/speed/pagespeed/insights/
+    - Mobile: Low (59/100) - Improvement options include eliminate render-blocking JS and CSS, leverage browser caching
+    - Desktop: Medium (79/100) - Improvement options include eliminate render-blocking JS and CSS, leverage browser caching, optimize images, minify CSS,  minify JS
+    
+  4 Performance: https://www.webpagetest.org
+    - iPhone 6 (3G, Safari) - A on everything but cache (F) https://www.webpagetest.org/result/180311_1N_25a7d4edf2f541939105a69ca3bb8ee8/
+    - Android (Galaxy 5, 3G, Chrome) - B on first byte and F on cache https://www.webpagetest.org/result/180311_1N_25a7d4edf2f541939105a69ca3bb8ee8/
+    - iPad mini (3G) - F on first byte and cache https://www.webpagetest.org/result/180311_M2_742b63c1ecbc1a203b77633f2de92278/
